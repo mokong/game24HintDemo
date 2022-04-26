@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jGG-x4-kSd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--24点提示实现-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game24HintDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-Vb-3XV">
+                                <rect key="frame" x="72" y="168" width="270" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xIy-dZ-Rtv">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvv-mF-yod">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="135"/>
+                                                <color key="backgroundColor" red="0.82745098039999998" green="0.58431372550000005" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-dE-mlc">
+                                                <rect key="frame" x="150" y="0.0" width="120" height="135"/>
+                                                <color key="backgroundColor" red="0.82745098039999998" green="0.58431372550000005" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Cvv-mF-yod" firstAttribute="width" secondItem="XpG-dE-mlc" secondAttribute="width" id="i2Z-Xv-k9T"/>
+                                            <constraint firstItem="Cvv-mF-yod" firstAttribute="height" secondItem="XpG-dE-mlc" secondAttribute="height" id="iBF-lj-Awo"/>
+                                            <constraint firstItem="XpG-dE-mlc" firstAttribute="leading" secondItem="Cvv-mF-yod" secondAttribute="trailing" constant="30" id="yyr-Gw-JeS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-Zv-MNW">
+                                        <rect key="frame" x="0.0" y="165" width="270" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWu-TU-XE7">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="135"/>
+                                                <color key="backgroundColor" red="0.82745098039999998" green="0.58431372550000005" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-2V-ed6">
+                                                <rect key="frame" x="150" y="0.0" width="120" height="135"/>
+                                                <color key="backgroundColor" red="0.82745098039999998" green="0.58431372550000005" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BWu-TU-XE7" firstAttribute="height" secondItem="dIx-2V-ed6" secondAttribute="height" id="5pp-He-uQB"/>
+                                            <constraint firstItem="dIx-2V-ed6" firstAttribute="leading" secondItem="BWu-TU-XE7" secondAttribute="trailing" constant="30" id="i89-4V-v2n"/>
+                                            <constraint firstItem="BWu-TU-XE7" firstAttribute="width" secondItem="dIx-2V-ed6" secondAttribute="width" id="zh4-43-3to"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="RBU-Ra-d7S"/>
+                                    <constraint firstItem="xIy-dZ-Rtv" firstAttribute="height" secondItem="KYH-Zv-MNW" secondAttribute="height" id="ZKp-yB-PiC"/>
+                                    <constraint firstItem="KYH-Zv-MNW" firstAttribute="top" secondItem="xIy-dZ-Rtv" secondAttribute="bottom" constant="30" id="pAJ-Cx-h1T"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvW-RA-xju">
+                                <rect key="frame" x="70" y="528" width="274" height="54"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.58431372550000005" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="wY9-du-4b9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="获取提示"/>
+                                <connections>
+                                    <action selector="getHint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSS-TP-8w8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CvW-RA-xju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4LB-Qj-yfV"/>
+                            <constraint firstItem="CvW-RA-xju" firstAttribute="top" secondItem="wxq-Vb-3XV" secondAttribute="bottom" constant="60" id="ATk-X5-l3R"/>
+                            <constraint firstItem="CvW-RA-xju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="R0D-bJ-3eb"/>
+                            <constraint firstItem="wxq-Vb-3XV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="dSN-Q0-OQN"/>
+                            <constraint firstItem="wxq-Vb-3XV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="f6i-0S-Wiy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CvW-RA-xju" secondAttribute="trailing" constant="70" id="ntx-eM-e2Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wxq-Vb-3XV" secondAttribute="trailing" constant="72" id="uNZ-7K-4uL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="24点提示实现" id="TQd-BF-Ax7"/>
+                    <connections>
+                        <outlet property="btn1" destination="Cvv-mF-yod" id="F3o-Co-oCG"/>
+                        <outlet property="btn2" destination="XpG-dE-mlc" id="PdO-cU-ms2"/>
+                        <outlet property="btn3" destination="BWu-TU-XE7" id="eYv-Eg-rYH"/>
+                        <outlet property="btn4" destination="dIx-2V-ed6" id="N2c-TW-cvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="85.714285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ryN-lm-Prl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jGG-x4-kSd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GqM-Ln-Oqf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P6g-kw-bi3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tT-mV-KCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
