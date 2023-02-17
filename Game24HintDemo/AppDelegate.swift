@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Game24HintDemo
 //
-//  Created by Horizon on 26/4/2022.
+//  Created by MorganWang  on 26/4/2022.
 //
 
 import UIKit
